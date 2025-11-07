@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    # Nombre de la imagen que crearemos
+    build: .
+    # Carga las variables de entorno desde el archivo .env (incluyendo MONGO_URI)
+    env_file:
+      - .env
+    # Mapea el puerto 5000 del contenedor al puerto 5000 de tu host
+    ports:
+      - "5000:5000"
+    # Reinicia el contenedor si falla
+    restart: always

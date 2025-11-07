@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de Seguimiento Semestral</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        .container { background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 900px; margin: auto; }
+        h1, h2, h3 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input[type="text"], input[type="number"], select, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        textarea { height: 100px; }
+        .section-header { margin-top: 30px; padding: 10px; background-color: #e9e9e9; border-radius: 4px; }
+        .materia-group { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; border-radius: 4px; }
+        .materia-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Formato de Seguimiento Semestral</h1>
+    
+    <form method="POST" action="/submit">
+    
+    <div class="section-header"><h2>1. Información General del Estudiante</h2></div>
+        <label for="nombre">Nombre del Estudiante:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required>
+
+        <label for="carrera">Carrera:</label>
+        <input type="text" id="carrera" name="carrera" required>
+
+        <label for="cuatrimestre">Cuatrimestre:</label>
+        <input type="text" id="cuatrimestre" name="cuatrimestre" required>
+
+    <div class="section-header">
+        <h2>2. Primera Parte. ANÁLISIS DEL PARCIAL ANTERIOR</h2>
+        <h3>Diagnóstico del parcial anterior </h3>
+    </div>
+    
+    <div class="materia-group">
+        <h4>Materia Anterior 1</h4>
+        <label for="ant_materia1_nombre">Nombre de la Materia:</label>
+        <input type="text" id="ant_materia1_nombre" name="ant_materia1_nombre">
+        
+        <div class="materia-row">
+            <div><label for="ant_materia1_final">Calificación Final:</label><input type="number" id="ant_materia1_final" name="ant_materia1_final" min="0" max="100"></div>
+            <div><label for="ant_materia1_inasist">Total Inasistencias:</label><input type="number" id="ant_materia1_inasist" name="ant_materia1_inasist" min="0"></div>
+        </div>
+    </div>
+        <div class="materia-group">
+        <h4>Materia Anterior 2</h4>
+        <label for="ant_materia1_nombre">Nombre de la Materia:</label>
+        <input type="text" id="ant_materia1_nombre" name="ant_materia1_nombre">
+        
+        <div class="materia-row">
+            <div><label for="ant_materia1_final">Calificación Final:</label><input type="number" id="ant_materia1_final" name="ant_materia1_final" min="0" max="100"></div>
+            <div><label for="ant_materia1_inasist">Total Inasistencias:</label><input type="number" id="ant_materia1_inasist" name="ant_materia1_inasist" min="0"></div>
+        </div>
+    </div>
+        <div class="materia-group">
+        <h4>Materia Anterior 3</h4>
+        <label for="ant_materia1_nombre">Nombre de la Materia:</label>
+        <input type="text" id="ant_materia1_nombre" name="ant_materia1_nombre">
+        
+        <div class="materia-row">
+            <div><label for="ant_materia1_final">Calificación Final:</label><input type="number" id="ant_materia1_final" name="ant_materia1_final" min="0" max="100"></div>
+            <div><label for="ant_materia1_inasist">Total Inasistencias:</label><input type="number" id="ant_materia1_inasist" name="ant_materia1_inasist" min="0"></div>
+        </div>
+    </div>
+        <div class="materia-group">
+        <h4>Materia Anterior 4</h4>
+        <label for="ant_materia1_nombre">Nombre de la Materia:</label>
+        <input type="text" id="ant_materia1_nombre" name="ant_materia1_nombre">
+        
+        <div class="materia-row">
+            <div><label for="ant_materia1_final">Calificación Final:</label><input type="number" id="ant_materia1_final" name="ant_materia1_final" min="0" max="100"></div>
+            <div><label for="ant_materia1_inasist">Total Inasistencias:</label><input type="number" id="ant_materia1_inasist" name="ant_materia1_inasist" min="0"></div>
+        </div>
+    </div>
+        <div class="materia-group">
+        <h4>Materia Anterior 5</h4>
+        <label for="ant_materia1_nombre">Nombre de la Materia:</label>
+        <input type="text" id="ant_materia1_nombre" name="ant_materia1_nombre">
+        
+        <div class="materia-row">
+            <div><label for="ant_materia1_final">Calificación Final:</label><input type="number" id="ant_materia1_final" name="ant_materia1_final" min="0" max="100"></div>
+            <div><label for="ant_materia1_inasist">Total Inasistencias:</label><input type="number" id="ant_materia1_inasist" name="ant_materia1_inasist" min="0"></div>
+        </div>
+    </div>
+        <div class="materia-group">
+        <h4>Materia Anterior 6</h4>
+        <label for="ant_materia1_nombre">Nombre de la Materia:</label>
+        <input type="text" id="ant_materia1_nombre" name="ant_materia1_nombre">
+        
+        <div class="materia-row">
+            <div><label for="ant_materia1_final">Calificación Final:</label><input type="number" id="ant_materia1_final" name="ant_materia1_final" min="0" max="100"></div>
+            <div><label for="ant_materia1_inasist">Total Inasistencias:</label><input type="number" id="ant_materia1_inasist" name="ant_materia1_inasist" min="0"></div>
+        </div>
+    </div>
+        <div class="materia-group">
+        <h4>Materia Anterior 7</h4>
+        <label for="ant_materia1_nombre">Nombre de la Materia:</label>
+        <input type="text" id="ant_materia1_nombre" name="ant_materia1_nombre">
+        
+        <div class="materia-row">
+            <div><label for="ant_materia1_final">Calificación Final:</label><input type="number" id="ant_materia1_final" name="ant_materia1_final" min="0" max="100"></div>
+            <div><label for="ant_materia1_inasist">Total Inasistencias:</label><input type="number" id="ant_materia1_inasist" name="ant_materia1_inasist" min="0"></div>
+        </div>
+    </div>
+    
+    <label for="promedio_anterior">Promedio General del Parcial Anterior:</label>
+    <input type="number" id="promedio_anterior" name="promedio_anterior" step="0.01" min="0" max="100">
+
+    <label for="avance_carrera">Avance de Carrera (Reflexión):</label>
+    <textarea id="avance_carrera" name="avance_carrera"></textarea>
+
+    <div class="section-header"><h2>4. Plan de Acción Personal: Reflexión</h2></div>
+
+    <label for="reflexion_aprobacion">Balance de Aprobación:</label>
+    <textarea id="reflexion_aprobacion" name="reflexion_aprobacion"></textarea>
+
+    <label for="acciones_aprobacion">Acciones para Continuar Aprobando:</label>
+    <textarea id="acciones_aprobacion" name="acciones_aprobacion"></textarea>
+
+    <label for="estrategias_academicas">Estrategias para Problemáticas Académicas:</label>
+    <textarea id="estrategias_academicas" name="estrategias_academicas"></textarea>
+
+    <label for="objetivos_corto_plazo">Objetivos Personales/Profesionales a Corto Plazo:</label>
+    <textarea id="objetivos_corto_plazo" name="objetivos_corto_plazo"></textarea>
+
+    <div class="section-header"><h2>5. Plan de Acción Tutorial (Seguimiento) y Cierre</h2></div>
+
+    <label for="solicitud_canalizacion">Solicitud de Canalización:</label>
+    <select id="solicitud_canalizacion" name="solicitud_canalizacion">
+        <option value="No">No necesito canalización.</option>
+        <option value="Psicopedagogia">Sí, solicito canalización a psicopedagogía.</option>
+        <option value="Personalizada">Sí, solicito tutoría personalizada.</option>
+    </select>
+    
+    <label for="observaciones_tutor">Observaciones del Tutor/a y Compromiso (Campo del Tutor):</label>
+    <textarea id="observaciones_tutor" name="observaciones_tutor"></textarea>
+    
+    <label for="pronostico_cierre">Cierre y Pronóstico Académico Integral:</label>
+    <textarea id="pronostico_cierre" name="pronostico_cierre"></textarea>
+
+    <button type="submit" style="margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">Enviar Formulario</button>
+    </form>
+</div>
+</body>
+</html>
